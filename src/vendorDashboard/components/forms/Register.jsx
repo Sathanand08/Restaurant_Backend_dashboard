@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { API_URL } from '../../data/apiPath';
-import { ThreeCircles } from 'react-loader-spinner';
+import { ThreeDots } from 'react-loader-spinner';
 
 const Register = ({ showLoginHandler }) => {
   const [username, setUsername] = useState("");
@@ -50,12 +50,12 @@ const Register = ({ showLoginHandler }) => {
     <div className="registerSection">
      {loading && 
       <div className="loaderSection">
-      <ThreeCircles
+      <ThreeDots
         visible={loading}
         height={100}
         width={100}
         color="#4fa94d"
-        ariaLabel="three-circles-loading"
+        ariaLabel="three-dots-loading"
         wrapperStyle={{}}
         wrapperClass=""
       />
